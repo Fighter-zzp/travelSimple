@@ -47,7 +47,6 @@
       <version>1.0.9</version>
     </dependency>
     <!--jdbcTemplate-->
-    <!--jdbcTemplate-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
@@ -127,13 +126,13 @@
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.0</version>
           <configuration>
-            <release>12</release>
-            <compilerArgs>
-              <arg>--enable-preview</arg>
-            </compilerArgs>
+            <source>12.0.1</source>
+            <target>12.0.1</target>
+            <encoding>UTF8</encoding>
           </configuration>
         </plugin>
         <plugin>
